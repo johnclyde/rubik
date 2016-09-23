@@ -1,1 +1,1 @@
-# rubik
+# scripts for solving
