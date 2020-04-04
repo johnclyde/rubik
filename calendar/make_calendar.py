@@ -1,4 +1,5 @@
 import datetime
+from .basic_renderer import BasicRenderer
 from .dumb_renderer import DumbRenderer
 
 names_of_days = [
@@ -36,7 +37,8 @@ def main(
 
 
 if __name__ == "__main__":
-    renderer = DumbRenderer()
+    renderer = DumbRenderer()  # This is about to go bye-bye
+    renderer = BasicRenderer()
     startdate = datetime.date(2019, 8, 1)
     enddate = datetime.date(2020, 4, 30)
 
