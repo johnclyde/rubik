@@ -2,7 +2,7 @@
 
 A solver and algorithm explorer for **Meffert's 12-color Skewb Ultimate**:
 the dodecahedron with four core-mounted corners, four free corners, and six
-large pieces. Runs on **Python 3.10+**, with no third-party dependencies.
+large pieces. Runs on **Python 3.14+**, with no third-party dependencies.
 
 This models the whole puzzle, including large-piece orientation. It is not
 a solver for a regular 3×3 cube, Pyraminx, Megaminx, or Gear Cube.
@@ -127,8 +127,7 @@ python3 -m compileall -q meffert tests
 
 Tests check legacy moves, piece integrity, impossible states, exact projection
 sizes, shortest solutions against independent shallow breadth first search,
-seeded longer scrambles, saved states, and search limits. CI runs on Python
-3.10 and 3.14.
+seeded longer scrambles, saved states, and search limits. CI runs on Python 3.14.
 
 `meffert/solve_sides.pl` is retained as the historical color-mapping source;
 prefer the new commands for actual use.
